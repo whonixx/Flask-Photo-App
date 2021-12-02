@@ -1,0 +1,44 @@
+<style>
+    .bg-img {
+        background-image: url("static/photographybg.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 100%;
+    }
+</style>
+<body>
+    <div class="bg-img">
+    {% extends 'navbar.html' %}
+    {% block content %}
+    <h3 class ="mt-5 text-white" style="text-align: center;">Our World</h3>
+    <h6 class="text-white" style="text-align: center;">My persective</h6>
+    <div class="container text-white mt-4">
+        <div class="row justify-content-around">
+            <div class="col-sm-4">
+                <div class="card py-3 bg-dark mt-4">
+                    <h5 class="card-title text-center">Abandoned</h5>
+                    <img src="static/bando1.jpg" class="card-img-top" alt="abandoned photography"><hr>
+                        <a href="/abandoned" class="btn btn-danger">View</a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card py-3 bg-dark mt-4">
+                    <h5 class="card-title text-center">landscape</h5>
+                    <img src="static/landscape1.jpg" class="card-img-top" alt="landscape photography"><hr>
+                        <a href="/landscapes" class="btn btn-danger">View</a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card py-3 bg-dark mt-4">
+                    <h5 class="card-title text-center">Humans</h5>
+                    <img src="static/portraits/alexa.jpg" class="card-top-img" alt="portrait photography"><hr>
+                        <a href="/humans" class="btn btn-danger">View</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+</body>
+{% endblock %}

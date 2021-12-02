@@ -1,0 +1,52 @@
+<style>
+    .bg-img {
+        background-image: url("static/foggyroad.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 100%;
+    }
+</style>
+
+<body>
+    <div class="bg-img">
+    {% extends 'navbar.html' %}
+    {% block content %}
+    <div class="container py-3 my-3 mt-6">
+        <h1 style="text-align: center;">idkpdx</h1>
+        <p class="m-4" style="text-align: center;">Hi and welcome to my little corner of the internet. This is a safe place that I created to share a few of the things that I discovered passion for. Click one of the buttons below to get lost in a world through my eyes.</p>
+    </div>
+    <div class="container text-white">
+        <div class="row">
+            <div class="col">
+    <div class="card bg-dark">
+        <img src="static/p2.jpg" class="card-img-top" alt="photography logo">
+        <div class="card-body text-center">
+            <h5 class="card-title">Photography</h5>
+            <a href="/photography" class="btn btn-secondary">View Portfolio</a>
+        </div>
+    </div>
+    </div>
+    <div class="col">
+    <div class="card bg-dark">
+        <img src="static/p1.jpg" class="card-img-top" alt="photography logo">
+        <div class="card-body text-center">
+            <h5 class="card-title">Programming</h5>
+            <a href="/programming" class="btn btn-secondary">View Projects</a>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+<footer class="bg-dark text-center text-lg-start text-white">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright: 
+            <a class="text-white">idkpdx</a>
+        </div>
+    </footer>
+</body>
+{% endblock %}
